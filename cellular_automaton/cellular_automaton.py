@@ -1,5 +1,22 @@
 #!/usr/bin/python
 
+'''
+Implementation of the Elementary Cellular Automaton
+
+For an explanation of the Elementary Cellular Automaton, read here:
+
+http://mathworld.wolfram.com/ElementaryCellularAutomaton.html
+
+The script takes three parameters:
+	- A generation zero as a starting pattern, e.g. 1 or 101 or 1110111
+	- A rule from 0 to 255 by which to evolve the generations
+	- A maximum generation
+
+Sample usage:
+	./cellular_automaton.py 010 30 30
+	./cellular_automaton.py 1110111 255 30
+'''
+
 import sys
 
 def rule(i):
