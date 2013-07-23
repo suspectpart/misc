@@ -1,1 +1,0 @@
-﻿Function desk {cd "$Home\Desktop"}
