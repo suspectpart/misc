@@ -25,12 +25,10 @@ class Player(object):
 		bullet = random.randint(1, self.kill_probability)
 		target = min(opponents, key=lambda x: x.kill_probability)
 		target.take(bullet)
-
-		print self.name, "shoots at", target.name, "and", "misses" if target.alive else "kills", "him."
+		#print self.name, "shoots at", target.name, "and", "misses" if target.alive else "kills", "him."
 
 	def take(self, bullet):
 		self.alive = bullet != 1
-
 
 class Mister_Black(Player):
 	def __init__(self):
@@ -41,14 +39,10 @@ class Mister_Black_Smart(Mister_Black):
 	def shoot(self, opponents):
 		bullet = random.randint(1, self.kill_probability)
 		if len(opponents) > 1:
-			print "Mister Black shoots a bird"
+		#	print "Mister Black shoots a bird"
 			return
 
-		else:
-			target = min(opponents, key=lambda x: x.kill_probability)
-			target.take(bullet)
-
-			print self.name, "shoots at", target.name, "and", "misses" if target.alive else "kills", "him."
+		Mister_Black.shoot(self, opponents)
 
 class Mister_Gray(Player):
 	def __init__(self):
@@ -62,14 +56,15 @@ class Mister_White(Player):
 
 def stats():
 	winners = []
-	for i in range(0,1000):
+	rounds = 10000
+	for i in range(0,rounds):
 		players = [Mister_Black_Smart(), Mister_Gray(), Mister_White()]
 		triell = Triell(players)
 		winner = triell.start()
 		winners.append(winner)
 
-	print "Mister Black won", (float(winners.count("Mister Black")) / 1000) * 100, "% of all triells."
-	print "Mister Gray won", (float(winners.count("Mister Gray")) / 1000) * 100, "% of all triells."
-	print "Mister White won", (float(winners.count("Mister White")) / 1000) * 100, "% of all triells."
+	print "Mister Black won", (float(winners.count("Mister Black")) / rounds) * 100, "% of all triells."
+	print "Mister Gray won", (float(winners.count("Mister Gray")) / rounds) * 100, "% of all triells."
+	print "Mister White won", (float(winners.count("Mister White")) / rounds) * 100, "% of all triells."
 
 stats()
