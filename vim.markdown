@@ -12,9 +12,11 @@
 **:w** (save current buffer)  
 **:w file** (save current buffer to given file)  
 
-# Commands
+# Issue shell commands
 **:! <shell-command>** (run a shell command)  
 **:w ! <shell-command>** (pipe current buffer into shell command)  
+**:r ! <shell-command>** (pipe output of shell command into current file  
+**:sh** (open a new shell instance; exit returns to vim)  
 
 # Working with Tabs
 **:tab new** (open new, empty tab)  
