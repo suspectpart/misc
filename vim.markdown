@@ -34,6 +34,6 @@
 **:q** (close current window)  
 
 # Abbreviations
-**:ab hs Horst Schneider** (replace all occurences of abbreviation hs with Horst Schneider)
-**:una hs** (unabbreviate hs)
-**:abc** (clear all abbreviations)
+**:ab hs Horst Schneider** (replace all occurences of abbreviation hs with Horst Schneider)  
+**:una hs** (unabbreviate hs)  
+**:abc** (clear all abbreviations)  
