@@ -6,6 +6,22 @@
 **vim -n file** (don't create a swap file; e.g. when you handle sensitive data)  
 **vim -M file** (non-modifiable mode; read files safely without being able to modify them)  
 
+# Navigation (Normal Mode)
+**h,j,k,l** (left, down, up, right)  
+**gg** (beginning of document)  
+**G** (end of document)  
+**30G** (go to line 30)  
+**w** (go to beginning of next word (C style))  
+**W** (go to beginning of next word (Text style))  
+**b** (go to beginning of previous word)   
+**e** (go to end of next word)  
+**30j** (jump 30 lines down) 
+**f <char>** (go to next occurence of <char> in this line)   
+**5f <char>** (go to fith occurence of <char> in this line)  
+**t <char>** (place cursor before next occurence of <char> in this line)  
+**5t <char>** (place cursor before fifth occurence of <char> in this line)  
+
+ 
 # Read and write files
 **:r file** (read file content into current buffer)  
 **:w** (save current buffer)  
