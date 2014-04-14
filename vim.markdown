@@ -1,7 +1,6 @@
 # Vim Commands
 
 # Startup
-
 **ls -l | vim -** (pipe stuff into a new vim buffer)   
 **vim -p file3 file2 file3** (open files in tabbed mode)   
 **vim -n file** (don't create a swap file; e.g. when you handle sensitive data)  
@@ -33,3 +32,8 @@
 **ctrl\w h/j/k/l** (change window in given direction)  
 **ctrl\w gf** (open file under cursor in new window)  
 **:q** (close current window)  
+
+# Abbreviations
+**:ab hs Horst Schneider** (replace all occurences of abbreviation hs with Horst Schneider)
+**:una hs** (unabbreviate hs)
+**:abc** (clear all abbreviations)
