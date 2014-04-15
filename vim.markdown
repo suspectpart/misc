@@ -21,6 +21,28 @@
 **t <char>** (place cursor before next occurence of <char> in this line)  
 **5t <char>** (place cursor before fifth occurence of <char> in this line)  
 
+## Text Manipulation in Normal Mode
+**dd** (cut one line)  
+**5dd** (cut 5 lines)  
+**yy** (copy current line)  
+**Y** (copy current line)  
+**5yy** (copy 5 lines)  
+**p** (paste copied lines in next line)    
+**P** (paste copied lines in this line)  
+**D** (tail line - delete from cursor to end of line)  
+**J** (join line under cursor with next line, adding 1 or 2 spaces)  
+**u** (undo last change)  
+**x** (delete character under cursor)  
+**5x** (delete 5 chars beginning with cursor)      
+**~** (swap case of character under cursor)  
+**5~~** (swap case of character under cursor + 4)  
+
+## Search and Replace
+**/pattern** (search for pattern downwards)  
+**?pattern** (search for pattern upwards)  
+**n** (go to next match)  
+**N** (go to previous match)  
+
 ## Read and write files
 **:r file** (read file content into current buffer)  
 **:w** (save current buffer)  
