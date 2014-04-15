@@ -37,11 +37,16 @@
 **~** (swap case of character under cursor)  
 **5~~** (swap case of character under cursor + 4)  
 
-## Search and Replace
-**/pattern** (search for pattern downwards)  
-**?pattern** (search for pattern upwards)  
-**n** (go to next match)  
-**N** (go to previous match)  
+## Search and Replace (in command mode)  
+**:/pattern** (search for pattern downwards)  
+**:?pattern** (search for pattern upwards)  
+**:n** (go to next match)  
+**:N** (go to previous match)  
+**:$ s/pattern/replacement/** (replace pattern with replacement in last line)  
+**:0 s/pattern/replacement/** (replace pattern with replacement in first line)  
+**:% s/pattern/replacement/** (replace pattern with replacement in whole file)  
+**:x,y s/pattern/replacement/** (replace pattern with replacement in given range)  
+**:s/pattern/replacement/g** (replace all matches in a line)  
 
 ## Read and write files
 **:r file** (read file content into current buffer)  
