@@ -15,13 +15,19 @@
 **W** (go to beginning of next word (Text style))  
 **b** (go to beginning of previous word)   
 **e** (go to end of next word)  
-**30j** (jump 30 lines down) 
+**30j** (jump 30 lines down)   
 **f <char>** (go to next occurence of <char> in this line)   
 **5f <char>** (go to fith occurence of <char> in this line)  
 **t <char>** (place cursor before next occurence of <char> in this line)  
 **5t <char>** (place cursor before fifth occurence of <char> in this line)  
+**H** (move cursor to top of the screen)  
+**M** (move curstor to middle of the screen)  
+**L** (move cursor to end of the screen)  
+**0** (move cursor to beginning of line)  
+**^** (move cursor to first non-empty character of line)  
+**$** (move cursor to end of line)  
 
-## Text Manipulation in Normal Mode
+## Text Manipulation (Normal Mode)
 **dd** (cut one line)  
 **5dd** (cut 5 lines)  
 **yy** (copy current line)  
@@ -37,6 +43,9 @@
 **~** (swap case of character under cursor)  
 **5~~** (swap case of character under cursor + 4)  
 
+## Text Manipulation (Entering Insert Mode)
+**c** 
+
 ## Search and Replace (in command mode)  
 **:/pattern** (search for pattern downwards)  
 **:?pattern** (search for pattern upwards)  
@@ -45,7 +54,9 @@
 **:$ s/pattern/replacement/** (replace pattern with replacement in last line)  
 **:0 s/pattern/replacement/** (replace pattern with replacement in first line)  
 **:% s/pattern/replacement/** (replace pattern with replacement in whole file)  
-**:x,y s/pattern/replacement/** (replace pattern with replacement in given range)  
+**:7,9 s/pattern/replacement/** (replace pattern with replacement in range from line 7 to line 9)  
+**:2,+5 s/pattern/replacement/** (replace pattern with replacement in range from line 2 plus 5 lines)  
+**:17,$ s/pattern/replacement/** (replace pattern with replacement in range from line 17 through the last line)  
 **:s/pattern/replacement/g** (replace all matches in a line)  
 
 ## Read and write files
