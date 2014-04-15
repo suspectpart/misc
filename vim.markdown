@@ -32,6 +32,11 @@
 **:r ! <shell-command>** (pipe output of shell command into current file  
 **:sh** (open a new shell instance; exit returns to vim)  
 
+## Working With Buffers
+**:e file** (open file to edit in new buffer)  
+**:b 1** (jump to buffer 1)  
+**:bdelete** (delete current buffer)  
+
 ## Working with Tabs
 **:tab new** (open new, empty tab)  
 **:tabe file** (open file in tab)   
@@ -53,3 +58,11 @@
 **:ab hs Horst Schneider** (replace all occurences of abbreviation hs with Horst Schneider)  
 **:una hs** (unabbreviate hs)  
 **:abc** (clear all abbreviations)  
+
+## Entering Visual Mode
+**v** (Enter visual mode, selecting characters and lines)  
+**shift\v** (Enter visual mode, selecting whole lines)  
+**ctrl\v** (Enter visual mode, selecting blocks)  
+
+## Misc
+**:Ex** (open file explorer)  
