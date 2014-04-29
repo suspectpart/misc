@@ -15,6 +15,10 @@ cp logstash.conf /etc/logstash/conf.d/
 chown root:root /etc/logstash/conf.d/logstash.conf
 chmod 744 /etc/logstash/conf.d/logstash.conf
 
+# make elasticsearch and logstash start on boot
+update-rc.d elasticsearch defaults 95 10
+update-rc.d logstash defaults 95 10
+
 #start services
 service logstash restart
 service logstash force-reload 
