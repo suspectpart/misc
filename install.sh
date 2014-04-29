@@ -1,7 +1,6 @@
 #!/bin/bash
 # install java (prerequisite)
-apt-get install openjdk-7-jdk -y
-apt-get install chkconfig
+apt-get install openjdk-7-jdk chkconfig unzip -y
 
 # install logstash and elasticsearch
 cd /opt
