@@ -12,8 +12,8 @@ rm elasticsearch-1.1.0.deb
 
 # copy logstash.conf to /etc/logstash/conf.d and adjust rights
 cp logstash.conf /etc/logstash/conf.d/
-chmod root:root logstash.conf
-chown 744 logstash.conf
+chown root:root /etc/logstash/conf.d/logstash.conf
+chmod 744 /etc/logstash/conf.d/logstash.conf
 
 #start services
 service logstash restart
