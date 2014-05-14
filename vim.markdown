@@ -1,4 +1,4 @@
-* auto-gen TOC:
+* auto-gen TOC:  
 {:toc}
 
 # Vim Commands
