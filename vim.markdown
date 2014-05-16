@@ -1,6 +1,4 @@
-* auto-gen TOC:  
-{:toc}
-
+[TOC]
 # Vim Commands
 
 ## Startup
