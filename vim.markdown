@@ -1,4 +1,3 @@
-[TOC]
 # Vim Commands
 
 ## Startup
