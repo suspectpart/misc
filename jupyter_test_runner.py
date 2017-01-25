@@ -1,9 +1,10 @@
+import io
+import numpy as np
 import sys
 import traceback
-from termcolor import colored
-import numpy as np
-import io
 from contextlib import redirect_stdout
+from termcolor import colored
+
 
 def run_all_tests(print_stdout = True, clean_tests = True):
 	'''
